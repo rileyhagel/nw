@@ -2,17 +2,70 @@
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Neighborhood Weekly</title>
+        <link rel="stylesheet" href="styles.css">
+        <link rel="icon" href="nwlogo.png">
     </head>
     <body>
-        <h1>Neighborhood Weekly</h1>
-        <figure>
-            <iframe src="https://www.google.com/maps/d/u/0/embed?mid=1HWueM5YCvli-aLpINQcw0VuMBRUYVQA&ehbc=2E312F&noprof=1" width="640" height="480">
+        <h1>
+            <img src="nwheader.png" alt="Neighborhood Weekly" style="width: 100%">
+        </h1>
+        <h2>About</h2>
+        <p>
+            <i>Neighborhood Weekly</i> is a weekly publication delivered to the residents of the North Virginia Ct. cul-de-sac every Sunday.
+        </p>
+        <h2>Map</h2>
+        <figure style="text-align: center">
+            <noscript>
+                Aw, snap!<br>
+                Javascript is required to view the map. Please turn on Javascript in your browser settings and reload the page to view the map.
+            </noscript>
+            <button onclick="loadmap();">Load Map</button>
+            <button onclick="closemap();">Close Map</button>
+            <br>
+            <iframe id="map" src="blank.html" width="640" height="480">
                 Loading Map...
             </iframe>
-            <dl>
+            <dl style="text-align: left">
                 <dt>Blue marks</dt>
-                <dd>Neighborhood Weekly Free</dd>
+                <dd>Neighborhood Weekly delivered</dd>
             </dl>
         </figure>
+        <p>
+            If you have any questions, please email me at <a href="mailto:rileyhagel32@gmail.com">rileyhagel32@gmail.com</a>.
+        </p>
+        <h2>Past Issues</h2>
+        <h3>Jump To...</h3>
+        <a href="#vol1">Volume 1</a><br>
+        <br>
+        <ul>
+            <li id="vol1">
+                Volume 1
+                <ul>
+                    <li>
+                        Issue 1 (05/24)
+                        <ul>
+                            <li>First Issue!</li>
+                            <li>Puzzles and Fun</li>
+                        </ul>
+                    </li>
+                    <li>
+                        Issue 2 (05/31)
+                        <ul>
+                            <li>Puzzles and Fun</li>
+                            <li>A <a href="https://en.wikipedia.org/wiki/Calvin_and_Hobbes" target="_blank"><i>Calvin and Hobbes</i></a> comic is featured!</li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+        <script>
+            var mapframe = document.getElementById("map");
+            function loadmap() {
+                mapframe.src = "https://www.google.com/maps/d/u/0/embed?mid=1HWueM5YCvli-aLpINQcw0VuMBRUYVQA&ehbc=2E312F&noprof=1";
+            }
+            function closemap() {
+                mapframe.src = "blank.html";
+            }
+        </script>
     </body>
 </html>

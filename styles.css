@@ -1,0 +1,44 @@
+body {
+    font-family: Georgia, serif;
+    max-width: 60rem;
+    margin: auto;
+    margin-top: 2rem;
+    margin-bottom: 5rem;
+}
+h1 {
+    text-align: center;
+}
+iframe {
+    max-width: 100%;
+    resize: both;
+    overflow: auto;
+    margin: 10px;
+}
+figure {
+    border-style: solid;
+    border-color: black;
+    border-width: 1px;
+    padding: 10px;
+}
+/* LISTS */
+/* ➔❖➢ */
+ul {
+    padding-left: 3ch;
+}
+/* Level 1 */
+ul li::marker {
+  content: "❖ ";
+  color: red;
+}
+
+/* Level 2 */
+ul ul li::marker {
+  content: "➢ ";
+  color: blue;
+}
+
+/* Level 3 */
+ul ul ul li::marker {
+  content: "➔ ";
+  color: black;
+}
