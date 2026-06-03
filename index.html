@@ -4,14 +4,31 @@
         <title>Neighborhood Weekly</title>
         <link rel="stylesheet" href="styles.css">
         <link rel="icon" href="nwlogo.png">
+        <script src="whoisit.js"></script>
     </head>
     <body>
         <h1>
             <img src="nwheader.png" alt="Neighborhood Weekly" style="width: 100%">
         </h1>
+        <dialog id="whoisit" open>
+            <p>
+                Welcome, <script>document.write(whoisit());</script>.
+            </p>
+            <h2>Bulliten</h2>
+            <p>
+                Here are some bookmarks for your browser. To add them to your bookmarks, drag-n-drop them onto the bookmark bar.
+            </p>
+            <a class="bookmark" href="https://rileyhagel.github.io/nw">Neighborhood Weekly</a>
+            <br><br>
+            <hr>
+            <button onclick="document.getElementById('whoisit').close()">Close</button>
+            <button onclick="setName();location.reload();">Set your Name</button>
+            <button onclick="localStorage.clear();location.reload();">Clear Name</button>
+        </dialog>
+        <button onclick="document.getElementById('whoisit').show()">Open Bulliten</button>
         <h2>About</h2>
         <p>
-            <i>Neighborhood Weekly</i> is a weekly publication delivered to the residents of the North Virginia Ct. cul-de-sac every Sunday.
+            <i>Neighborhood Weekly</i> is a weekly publication delivered to the residents of the North Virginia Ct. cul-de-sac every Sunday. So far, we have comics, puzzles, jokes, and mazes.
         </p>
         <h2>Map</h2>
         <figure style="text-align: center">
