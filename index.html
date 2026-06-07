@@ -10,7 +10,10 @@
         <h1>
             <img src="nwheader.png" alt="Neighborhood Weekly" style="width: 100%">
         </h1>
-        <dialog id="whoisit" open>
+        <a href="secretfunzone/index.html">Go to the Secret Fun Zone</a>
+        <br>
+        <button onclick="document.getElementById('whoisit').show()">Open Bulliten</button>
+        <dialog id="whoisit">
             <p>
                 Welcome, <script>document.write(whoisit());</script>.
             </p>
@@ -25,7 +28,6 @@
             <button onclick="setName();location.reload();">Set your Name</button>
             <button onclick="localStorage.clear();location.reload();">Clear Name</button>
         </dialog>
-        <button onclick="document.getElementById('whoisit').show()">Open Bulliten</button>
         <h2>About</h2>
         <p>
             <i>Neighborhood Weekly</i> is a weekly publication delivered to the residents of the North Virginia Ct. cul-de-sac every Sunday. So far, we have comics, puzzles, jokes, and mazes.

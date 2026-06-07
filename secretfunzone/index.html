@@ -1,0 +1,31 @@
+<html>
+    <head>
+        <title>Secret Fun Zone -- Neighborhood Weekly</title>
+        <link rel="stylesheet" href="secret-css.css">
+        <link rel="icon" href="../nwlogo.png">
+    </head>
+    <body>
+        <a href="../index.html">&larr; Back to Main Page</a>
+        <h1>Secret Fun Zone</h1>
+        <hr>
+        <noscript>
+            Javascript is Required to use the Secret Fun Zone!
+        </noscript>
+        <div id="content">
+            <h2>Log In</h2>
+            <p>
+                To log in, you'll need this week's Secret Password found in the <i>Neighborhood Weekly</i>.
+            </p>
+            <form id="form">
+                <label>
+                    Secret Password: 
+                    <input type="text" id="password" autocomplete="one-time-code" class="password">
+                </label>
+                <button type="submit">Go</button>
+            </form>
+            <span id="fail"></span>
+        </div>
+        <hr>
+        <script src="secret.js"></script>
+    </body>
+</html>
