@@ -45,13 +45,13 @@ ul {
 /* Level 1 */
 ul li::marker {
   content: "❖ ";
-  color: red;
+  color: blue;
 }
 
 /* Level 2 */
 ul ul li::marker {
   content: "➢ ";
-  color: blue;
+  color: red;
 }
 
 /* Level 3 */

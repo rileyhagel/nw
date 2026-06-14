@@ -1,0 +1,25 @@
+<html>
+    <head>
+        <title>Deliver</title>
+        <style>
+            body, html {
+                margin: 0px;
+                padding: 0px;
+            }
+            #game {
+                /* Coordinates 16 16 shifts the hotspot to the exact center */
+                cursor: url('pete.png') 16 16, pointer;
+            }
+            area {
+                cursor: url('pete.png') 16 16, pointer;
+            }
+        </style>
+    </head>
+    <body>
+        <img id="game" src="background.png" alt="game" usemap="#game-map">
+        <map name="game-map">
+            <!-- Rectangular Hotspot -->
+            <area shape="rect" coords="0,0,320,240" href="https://example.com" alt="Link 1">
+        </map>
+    </body>
+</html>
