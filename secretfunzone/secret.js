@@ -1,5 +1,5 @@
 // Password
-var password = "twelve the chimp";
+var password = "fathersday2026";
 
 var content = document.getElementById("content");
 var fail = document.getElementById("fail");
